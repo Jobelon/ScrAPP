@@ -21,4 +21,4 @@ Registration and Google sign-in are simulations. Login checks for a locally regi
 
 Institutional emails accept .edu and .edu country suffixes for demonstration. Company registration excludes common personal domains; this is only illustrative and does not establish domain ownership.
 
-Sample material photos are AI-generated illustrations stored locally in a six-tile photo sheet. Uploaded listing photos stay on the device. Online fonts fall back to system fonts.
+The demo catalog includes PVC pipes, a grinder blade, steel rebar, door knobs, wood planks, and cement, using supplied images stored in `public/items/`. Uploaded listing photos stay on the device. Online fonts fall back to system fonts.
