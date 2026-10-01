@@ -930,11 +930,6 @@ export default function App(){
             </nav>
           )}
 
-          {/* iOS Home Indicator Bar */}
-          <div className="home-indicator-bar">
-            <div className="home-indicator-pill"/>
-          </div>
-
           {/* Toast */}
           {toast&&<div className="toast-toast"><CheckCircle2 size={16}/><span>{toast}</span></div>}
 
