@@ -1,0 +1,23 @@
+/* The app runs in its own mobile viewport; the outer page is the device stage. */
+.phone-screen .status-bar{display:none}
+.phone-screen,.phone-screen body,.phone-screen *{scrollbar-width:none}
+.phone-screen::-webkit-scrollbar,.phone-screen ::-webkit-scrollbar{display:none;width:0;height:0}
+body:has(.prototype-stage){display:block;overflow:hidden;background:#e8edf3}
+.prototype-stage{width:100vw;height:100dvh;min-height:0;display:grid;place-items:center;background:#e8edf3;overflow:hidden;padding:32px 20px}
+.phone-space{position:relative;flex-shrink:0}
+.phone-frame{position:absolute;top:0;left:0;width:374px;height:790px;padding:9px;background:#182530;border-radius:45px;transform-origin:top left;box-shadow:0 32px 50px -15px #1f35494a,0 14px 23px -15px #1c2d413b,inset 0 0 0 1px #ffffff0a}
+.phone-display{position:relative;display:flex;flex-direction:column;width:100%;height:100%;border-radius:36px;overflow:hidden;background:#f8fafb;isolation:isolate}
+.phone-status{height:39px;flex-shrink:0;position:relative;background:#1b6b3a;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 20px;user-select:none}
+.phone-clock{font-size:12px;font-weight:700;letter-spacing:-.3px;padding-top:1px}
+.phone-camera{position:absolute;top:8px;left:50%;transform:translateX(-50%);height:26px;width:99px;border-radius:18px;background:#152530}
+.phone-indicators{display:flex;align-items:center;gap:5px}
+.phone-signal{height:12px;display:flex;align-items:flex-end;gap:2px;margin-right:1px}
+.phone-signal i{display:block;width:2px;background:currentColor;border-radius:1px}
+.phone-signal i:nth-child(1){height:4px}.phone-signal i:nth-child(2){height:6px}.phone-signal i:nth-child(3){height:8px}.phone-signal i:nth-child(4){height:11px}
+.phone-app{display:block;border:0;width:100%;flex:1;min-height:0;background:#f8fafb}
+.phone-home{height:19px;display:grid;place-items:center;flex-shrink:0;background:#f8fafb}
+.phone-home span{height:5px;width:116px;border-radius:8px;background:#bdc6ce}
+.phone-side{position:absolute;width:3px;background:#182530;border-radius:3px;pointer-events:none}
+.phone-side-silent{left:-2px;top:112px;height:30px}
+.phone-side-volume{left:-2px;top:156px;height:51px;box-shadow:0 63px 0 #182530}
+.phone-side-power{right:-2px;top:190px;height:69px}
